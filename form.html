@@ -1,0 +1,57 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Form Validation</title>
+	 <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<script defer scr="index.js"></script>
+</head>
+<body>
+	<div class="container">
+		<form id="form" action="/">
+			<div class="input-control">
+				<label for="sys">Select your source :</label>
+				<input type="text" id="sys" name="sys" value="Google Cloud Storage" readonly>
+			</div>
+			<div class="input-control">
+				<label for="pipe">Provide a name for pipeline :</label>
+				<input id="pipe" name="pipe" type="text" placeholder="e.g., cust_shop_energy_gateway001">
+				<div class="error"></div>
+			</div>
+			<div class="input-control">
+				<label for="gcs-p">GCS project name :</label>
+				<input id="gcs-p" name="gcs-p" type="text" placeholder="project-id">
+				<div class="error"></div>
+			</div>
+			<div class="input-control">
+				<label for="gcs-b">GCS bucket name:</label>
+				<input id="gcs-b" name="gcs-b" type="text" placeholder="gs://your-bucket">
+				<div class="error"></div>
+			</div>
+			<div class="input-control">
+				<label for="icsf">Input Cloud Storage File(s)  :</label>
+				<input id="icsf" name="icsf" type="text" placeholder="GCS location of your files">
+				<div class="error"></div>
+			</div>
+			<div class="input-control">
+				<label for="gcs-c">GCS credentials :</label>
+				<input id="gcs-c" name="gcs-c" type="text" disabled>
+				<div class="error"></div>
+			</div>
+			
+			<div class="input-control">
+				<label for="run">Run Every :</label>
+				<input id="run" name="run" type="text" placeholder="(in minutes)">
+				<div class="error"></div>
+			</div>
+			<button type="create" class="b1">Create</button>
+			<button class="b1">Cancle</button>
+		</form>
+	</div>
+
+</body>
+</html>
